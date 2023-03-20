@@ -1,53 +1,38 @@
 <html>
   <head>
     <script type="text/javascript" src="funcionalidad.js"></script>
-    <style>
-      body {
-        margin: 0 auto;
-      }
-      .tablero {
-        width: 250px;
-        overflow: auto;
-      }
-
-      .tablero div {
-        width: 50px;
-        height: 50px;
-        border: 1px solid black;
-        float: left;
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body onload="inicio()">
+  <body onload="initGame()">
     <div>
-      <div class="tablero">
-        <div id="00" class="casillas"></div>
-        <div id="01" class="casillas"></div>
-        <div id="02" class="casillas"></div>
-        <div id="03" class="casillas"></div>
-        <div id="04" class="casillas"></div>
-        <div id="05" class="casillas"></div>
-        <div id="06" class="casillas"></div>
-        <div id="07" class="casillas"></div>
-        <div id="08" class="casillas"></div>
-        <div id="09" class="casillas"></div>
-        <div id="10" class="casillas"></div>
-        <div id="11" class="casillas"></div>
-        <div id="12" class="casillas"></div>
-        <div id="13" class="casillas"></div>
-        <div id="14" class="casillas"></div>
-        <div id="15" class="casillas"></div>
+      <div id="board" class="container">
+        <button id="0" class="piece"></button>
+        <button id="1" class="piece"></button>
+        <button id="2" class="piece"></button>
+        <button id="3" class="piece"></button>
+        <button id="4" class="piece"></button>
+        <button id="5" class="piece"></button>
+        <button id="6" class="piece"></button>
+        <button id="7" class="piece"></button>
+        <button id="8" class="piece"></button>
+        <button id="9" class="piece"></button>
+        <button id="10" class="piece"></button>
+        <button id="11" class="piece"></button>
+        <button id="12" class="piece"></button>
+        <button id="13" class="piece"></button>
+        <button id="14" class="piece"></button>
+        <button id="15" class="piece"></button>
       </div>
     </div>
-    <div>
+    <div class="container2">
       <div>
-        Nombre del jugador: <b><span>Ningún jugador</span></b>
+        Nombre del jugador: <b><span class="name">Ningún jugador</span></b>
       </div>
       <div>
-        Tiempo del juego: <b><span>00</span></b>
+        Tiempo del juego: <b><span class="time">00</span></b>
       </div>
       <div>
-        Número de movimientos <b><span>00</span></b>
+        Número de movimientos <b><span class="moves">00</span></b>
       </div>
     </div>
   </body>

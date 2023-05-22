@@ -14,7 +14,6 @@
   display: flex;
   flex-wrap: wrap;
 }
-
 .piece {
   background: #fff;
   cursor: pointer;
@@ -25,8 +24,21 @@
   justify-content: center;
   align-items: center;
   font-size: 24px;
+  background-color: pink;
 }
 
+#0 {
+  background-color: white;
+  background: #fff;
+  cursor: pointer;
+  width: 75px;
+  height: 75px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
 .container2 {
   padding: 2rem 0;
   margin: 20px auto;
